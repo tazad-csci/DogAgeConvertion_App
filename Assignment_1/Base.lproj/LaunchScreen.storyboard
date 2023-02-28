@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="asd-6Y-s2R">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="n0f-NV-fII">
+            <objects>
+                <viewController id="asd-6Y-s2R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wp1-vi-4il">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a Dog's Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW0-Q7-Rwr">
+                                <rect key="frame" x="20" y="60" width="374" height="44"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="38"/>
+                                <color key="textColor" red="0.13328781719999999" green="0.27083036300000002" blue="0.96942764520000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your dog?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxM-fk-LgB">
+                                <rect key="frame" x="20" y="129" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age in years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-QC-Aql">
+                                <rect key="frame" x="130" y="189.5" width="154" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37W-Ft-Ivc">
+                                <rect key="frame" x="100" y="253.5" width="214" height="30"/>
+                                <state key="normal" title="Final age in human years"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrg-xz-HYy">
+                                <rect key="frame" x="16" y="308.5" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="tUn-Cn-yEo">
+                                <rect key="frame" x="16" y="421" width="382" height="421"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bob-ch-hEW"/>
+                        <color key="backgroundColor" red="0.43071377280000001" green="0.91010075810000002" blue="0.77049195770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bob-ch-hEW" firstAttribute="bottom" secondItem="tUn-Cn-yEo" secondAttribute="bottom" constant="20" id="3aq-ID-Plf"/>
+                            <constraint firstItem="pxM-fk-LgB" firstAttribute="top" secondItem="SW0-Q7-Rwr" secondAttribute="bottom" constant="25" id="4cE-Pb-Pij"/>
+                            <constraint firstItem="SW0-Q7-Rwr" firstAttribute="leading" secondItem="bob-ch-hEW" secondAttribute="leading" constant="20" id="9Vf-fk-3hk"/>
+                            <constraint firstItem="SW0-Q7-Rwr" firstAttribute="top" secondItem="bob-ch-hEW" secondAttribute="top" constant="16" id="G5K-kk-a4Z"/>
+                            <constraint firstItem="37W-Ft-Ivc" firstAttribute="leading" secondItem="bob-ch-hEW" secondAttribute="leading" constant="100" id="H1Z-Us-5MW"/>
+                            <constraint firstItem="bob-ch-hEW" firstAttribute="trailing" secondItem="2GZ-QC-Aql" secondAttribute="trailing" constant="130" id="JzV-QS-2Xe"/>
+                            <constraint firstItem="bob-ch-hEW" firstAttribute="trailing" secondItem="tUn-Cn-yEo" secondAttribute="trailing" constant="16" id="LHF-4i-Lgf"/>
+                            <constraint firstItem="yrg-xz-HYy" firstAttribute="leading" secondItem="bob-ch-hEW" secondAttribute="leading" constant="16" id="OFI-rR-KxZ"/>
+                            <constraint firstItem="bob-ch-hEW" firstAttribute="trailing" secondItem="pxM-fk-LgB" secondAttribute="trailing" constant="20" id="OOk-qQ-GhM"/>
+                            <constraint firstItem="bob-ch-hEW" firstAttribute="trailing" secondItem="37W-Ft-Ivc" secondAttribute="trailing" constant="100" id="Osz-Vw-nTs"/>
+                            <constraint firstItem="2GZ-QC-Aql" firstAttribute="leading" secondItem="bob-ch-hEW" secondAttribute="leading" constant="130" id="PeM-Bs-psC"/>
+                            <constraint firstItem="bob-ch-hEW" firstAttribute="trailing" secondItem="yrg-xz-HYy" secondAttribute="trailing" constant="16" id="Phh-3N-y7x"/>
+                            <constraint firstItem="yrg-xz-HYy" firstAttribute="top" secondItem="37W-Ft-Ivc" secondAttribute="bottom" constant="25" id="S4P-mT-UI4"/>
+                            <constraint firstItem="37W-Ft-Ivc" firstAttribute="top" secondItem="2GZ-QC-Aql" secondAttribute="bottom" constant="30" id="Y1I-UA-Eww"/>
+                            <constraint firstItem="pxM-fk-LgB" firstAttribute="leading" secondItem="bob-ch-hEW" secondAttribute="leading" constant="20" id="b1C-DM-bxG"/>
+                            <constraint firstItem="bob-ch-hEW" firstAttribute="trailing" secondItem="SW0-Q7-Rwr" secondAttribute="trailing" constant="20" id="iVD-zI-Ldq"/>
+                            <constraint firstItem="tUn-Cn-yEo" firstAttribute="leading" secondItem="bob-ch-hEW" secondAttribute="leading" constant="16" id="pFf-cz-RSJ"/>
+                            <constraint firstItem="2GZ-QC-Aql" firstAttribute="top" secondItem="pxM-fk-LgB" secondAttribute="bottom" constant="35" id="tzc-1v-dn5"/>
+                            <constraint firstItem="tUn-Cn-yEo" firstAttribute="height" secondItem="wp1-vi-4il" secondAttribute="height" multiplier="0.47" id="wYx-qx-gER"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRd-qG-Jen" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.80000000000000004" y="50.824587706146929"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog" width="534" height="663"/>
+    </resources>
+</document>
